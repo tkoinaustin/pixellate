@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,15 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-m3-BTW">
-                                <rect key="frame" x="50" y="94" width="39" height="30"/>
-                                <state key="normal" title="Reset"/>
+                                <rect key="frame" x="50" y="94" width="80" height="30"/>
+                                <state key="normal" title="Load Image"/>
                                 <connections>
                                     <action selector="resetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THt-2L-z6l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dG-Am-Zrq">
-                                <rect key="frame" x="330" y="94" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <rect key="frame" x="285" y="94" width="79" height="30"/>
+                                <state key="normal" title="Save Image"/>
                                 <connections>
                                     <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nhj-tt-gW0"/>
                                 </connections>
@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gy3-Ho-aAY">
-                                <rect key="frame" x="20" y="363.5" width="374" height="498.5"/>
+                                <rect key="frame" x="20" y="139" width="374" height="498.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Gy3-Ho-aAY" secondAttribute="height" multiplier="3:4" id="nSM-gz-r1U"/>
                                 </constraints>
@@ -49,8 +49,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gy3-Ho-aAY" secondAttribute="trailing" constant="20" id="JbY-eC-Kov"/>
                             <constraint firstItem="pi8-m3-BTW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="SDi-hr-i95"/>
                             <constraint firstItem="Gy3-Ho-aAY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xh3-6o-dlE"/>
+                            <constraint firstItem="Gy3-Ho-aAY" firstAttribute="top" secondItem="Xej-pv-b6G" secondAttribute="top" id="cDO-GC-enY"/>
                             <constraint firstItem="pi8-m3-BTW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="eSn-oo-wnV"/>
-                            <constraint firstItem="Gy3-Ho-aAY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iCu-Gz-Cc5"/>
                             <constraint firstItem="4dG-Am-Zrq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="puZ-E1-Ng8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4dG-Am-Zrq" secondAttribute="trailing" constant="50" id="q3F-KE-kli"/>
                             <constraint firstItem="Xej-pv-b6G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qah-dW-wqQ"/>
